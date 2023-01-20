@@ -90,7 +90,8 @@ const renderer = new THREE.WebGLRenderer({
 })
 
 const controls = new OrbitControls(camera, canvas)
-controls.enableDamping = true
+controls.enableDamping = true;
+controls.enablePan = false;
 controls.maxDistance = 2;
 controls.minDistance = 1.3;
 controls.minPolarAngle = 1;
