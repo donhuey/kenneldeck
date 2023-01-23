@@ -34,9 +34,8 @@ const scene = new THREE.Scene();
             // let loader = THREE.GLTFLoader;
             loader.setDRACOLoader(dracoLoader);
             loader.load("/HustleDeck.gltf", function (gltf) {
-                gltf.scene.scale.set(0.0129, 0.0129, 0.0129); 
+                gltf.scene.scale.set(0.0128, 0.0128, 0.0128); 
                 let deck = gltf.scene;
-                deck.position.set(0.4,0.2,0)
                 scene.add(deck);
     
                 // animate();
