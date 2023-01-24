@@ -10,6 +10,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 
 const canvas = document.querySelector('.webgl');
 const scene = new THREE.Scene();
+scene.background = new THREE.Color ("rgba(153,153,151,255)");
 
 
     // Instantiate a loader
@@ -36,6 +37,7 @@ const scene = new THREE.Scene();
             loader.load("/HustleDeck.gltf", function (gltf) {
                 gltf.scene.scale.set(0.0128, 0.0128, 0.0128); 
                 let deck = gltf.scene;
+                deck.position.set(0,0,0)
                 scene.add(deck);
     
                 // animate();
