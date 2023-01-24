@@ -81,7 +81,7 @@ const sizes = {
 
 
 const camera = new THREE.PerspectiveCamera(75, sizes.width/sizes.height,0.1,100)
-camera.position.set(1,1,1.8);
+camera.position.set(1.8,1,1);
 // camera.maxDistance = 1;
 // camera.minDistance = 1;
 scene.add(camera);
